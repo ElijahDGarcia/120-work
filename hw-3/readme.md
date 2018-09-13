@@ -1,6 +1,6 @@
 Elijah Garcia
 
-["Hello World!" Sketch] (https://elijahdgarcia.github.io/120-work/hw-3/)
+!["Hello World!" Sketch] (https://elijahdgarcia.github.io/120-work/hw-3/)
 
 # Experience discussion!
 I had a fun time messing around with functions, and was frankly 'wow'ed when
