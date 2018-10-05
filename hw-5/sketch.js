@@ -48,10 +48,17 @@ function draw() {
   pop();
   //--- Constrained Ball Template End ---//
 
-  //---Mini Constrained Ball Start ---//
+  //---big free Ball Start ---//
   push();
-  translate( mouseX, mouseY );
-
+  //ball not constrained to original
+  translate( windowWidth/2, windowHeight/2 )
   push();
-  
+    ballOrbit = ballOrbit - 3;
+  fill( ballColor1-120, 0, ballColor2-120);
+  translate( -20, -40 );
+  rotate( radians(ballOrbit) );
+  ellipse( 300, 0, 150 );
+  pop();
+  pop();
+  //big ball end//
 }

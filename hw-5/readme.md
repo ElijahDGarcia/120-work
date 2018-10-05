@@ -1,5 +1,9 @@
-# Empty p5 sketch.
-
-Please replace contents of this file with appropriate readme information after finishing your p5 sketch.
-
-Current p5 version -> 0.7.1
+# Experience discussion!
+Lots of googling and looking at code examples for this one. The idea that the
+canvas rotates instead of the object itself really threw me off for awhile.
+## How'd you do it?
+Lots of googling, trial and error, and example looking. Animation is hard!
+### Issues?
+I didn't really know how to get one ball to orbit another, even with the examples
+given. I also wanted to make the static orbiting ball change its color based on its
+own x and y coordinates, but didn't know how to do that either.
