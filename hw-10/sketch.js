@@ -38,6 +38,7 @@ let dotRed = color( 100, 0, 0, 100);
   rain.y = rain.y + 1;
   rain.y = rain.y % windowHeight;
   rain.x = random(0 , width);
+  //nnothing goes here
 // defining rain variables for draw
   noStroke();
   fill ( rainArray[rainColor] );
