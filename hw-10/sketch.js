@@ -5,8 +5,13 @@ let rain = {
   hi : 10,
 };
 let rainColor = 0;
-
-
+function bigDot() {
+  if ( rain.y >= windowHeight / 2) {
+  rain.wi = rain.wi + 1 % 20 }
+  else { rain.wi = 10}
+  print(rain.y)
+};
+//above makes the dots get big when below halfway point
 //above defining rain variables//
 
 function setup() {
@@ -53,12 +58,7 @@ function mousePressed() {
 
   };
 
-  function bigDot() {
-    if ( rain.y >= windowHeight / 2) {
-    rain.wi = rain.wi + 1 % 20 }
-    else { rain.wi = 10}
-    print(rain.y)
-  };
+
 
 
 };
