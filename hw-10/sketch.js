@@ -43,7 +43,6 @@ let dotRed = color( 100, 0, 0, 100);
   fill ( rainArray[rainColor] );
   ellipse ( rain.x, rain.y, rain.wi, rain.hi );
   //print(rain.y)
-  bigDot();
 };
 
 function mousePressed() {
