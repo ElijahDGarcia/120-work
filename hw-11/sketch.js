@@ -1,34 +1,37 @@
 let matrixText = [];
-let b = 0;
+
 
 function setup() {
   createCanvas ( windowWidth, windowHeight);
   background('black');
   frameRate(60);
   //store class objects in array
+  let b = new MatrixNumber ();
+  matrixText.push(b);
 
-  for (let i = 0; i < 50; i++) {
-    matrixText[i] = new MatrixNumber();
-  }
 }
 
+//adding a new object to array every 500 milliseconds
+    setInterval(
+      function letsgoboy() {
+      let b = new MatrixNumber();
+      matrixText.push(b);
+    }, 350)
 
 
 function draw() {
-background(0, 0, 0, 100);
+background( 0, 0, 0, 75);
+frameRate(15);
   //run MatrixNumber functions for each stored object as its called from
   //array
-  b = b + 1
-
-  if ( b > 49) {
-    b = 0
-  }
+print(MatrixNumber.y);
 
 
-  print(b);
-  matrixText[b].rain();
-  matrixText[b].show();
+for( let i = 0; i < matrixText.length; i++){
+  matrixText[i].rain();
+  matrixText[i].show();
 
+}
 
 }
 
@@ -44,15 +47,15 @@ background(0, 0, 0, 100);
 class MatrixNumber {
     //defining class variables
     constructor() {
-      this.matrixSize = random(10, 50);
+      this.matrixSize = 20;
       this.textGreen = color('green');
       this.x = (random(0, windowWidth));
-      this.y = (0 + 20);
+      this.y = (0);
       this.digit = int(random( 1, 10 ));
     }
     //make matrix text rain down
     rain () {
-      this.y = (this.y - 15 & windowHeight);
+      this.y = (this.y + 20 % 979);
       this.digit = int(random( 1, 10 ));
     }
     //actually draw the matrix text on canvas
@@ -60,6 +63,6 @@ class MatrixNumber {
       fill('green');
       textSize(this.matrixSize);
       text(this.digit, this.x, this.y);
-        frameRate(10);
+
     }
 }
